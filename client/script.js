@@ -23,7 +23,7 @@ function typeText(element, text) {
       element.innerHTML += text.charAt(index);
       index++;
     } else {
-      clearImmediate(element);
+      clearInterval(element);
     }
   }, 20)
 }
